@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Centro de Downlod Microsoft</title>
+
+<style>
+    html{
+        font-size: 74.5%;
+    }
+    a{
+        text-decoration: none;
+    }
+    body{
+        word-wrap: break-word;
+        margin: 0;
+    }
+    ul{
+        list-style: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+    body {
+        width: 80%; 
+        margin: auto;
+        font-family: sans-serif;
+    }
+
+    .logo {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top:10px;
+    }
+
+    .header-top {
+        position: relative;
+    }
+
+    .header-nav {
+        
+        height: 15px; 
+        position: absolute;
+        bottom: 10px;
+        right:10px;
+        left:180px;
+        width: 90%;
+        
+       
+    }
+
+    .header-nav li {
+        list-style: none;
+        font-size: 15px;
+        margin: 0 2px 0 0;
+        display: inline-block;
+      
+        
+    }
+    .navigation li {
+        padding: 0 5px;
+        font-size: 12px;
+        
+    }
+
+    .navigation a {
+        color:black;
+        text-decoration: none;
+    }
+
+    .navigation a:hover{
+        text-decoration: underline;
+    }
+
+    .nav-2 li { 
+        position: relative;
+        left: 850px;
+        bottom: 40px;
+        
+    }
+
+    .nav-2 a {
+        position: relative;
+        right: 10px;
+        text-decoration: none;
+        color: black;
+         
+    }
+
+    #carr {
+        position: relative;
+        left: 65px;
+        bottom:10px;
+        text-decoration: none;
+        color: black;
+        padding: 0 10px;
+    }
+
+    #carr:hover {
+        text-decoration: underline;
+    }
+    #tudo {
+        position: relative;
+        bottom: 50px;
+        left: 950px;
+        padding: 0 10px;  
+    }
+    #pesq {
+        padding: 0 30px 0 0;
+        position: relative;
+        left: 100px;
+        bottom:10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    #pesq:hover {
+        text-decoration: underline;
+    }
+    #pesquisar{
+        position: relative;
+        left: 80px;
+        bottom:1px;
+        padding: 0 10px 0 0;
+    }
+
+    #Carrinho{
+        position: relative;
+        left: 60px;
+        bottom:2px;
+    }
+
+    #conta {
+        position: relative;
+        left: 920px;
+        bottom: 35px;
+    }
+    #principal {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .sobre{
+        height: 450px;
+        background-color: #e6e6e6;
+        margin: 10px 0 40px 10px; 
+        width: 1540px;
+    }
+
+    #sobre {
+        position: relative;
+        bottom: 300px;
+        left: 90px;
+        width: 32%;
+    }
+
+    .sobre h1 {
+        font-size: 30px;
+    }
+
+    #btn-1 {
+        background-color: black;
+        color:white;
+        width: 25%;
+        height: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        padding:10px 0px 2px 2px;
+        
+    }
+
+    #btn-1 a {
+        text-decoration: none;
+        color:#FFFFFF;
+    }
+
+    #btn-2 a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+    #btn-2 {
+        color:black;
+        width: 40%;
+        height: 50px;
+        text-align: center;
+        box-sizing: border-box;
+        padding:15px 2px 2px;
+        position: relative;
+        bottom: 35px;
+        left: 130px;
+    }
+
+    .sobre img {
+        position: relative;
+        left:820px;
+        height: 100%;
+       
+    }
+
+    #tudo:hover{
+        text-decoration:underline;
+    }
+
+    main {
+        width: 85%;
+        margin: 80px 0px 0px 150px;
+        background-color: white;
+    }
+
+    .windows-card {
+        text-align: center;
+        width: 20%;
+        float: left;
+        margin:30px;
+    }
+
+    .xbox img {
+        position: relative;
+        top: 5px;
+    }
+
+
+    .windows-phone img {
+        position: relative;
+        left: 10px;
+        top: 5px;
+    }
+    .office-card {
+        text-align: center;
+        margin:30px;
+        float:left;
+        width: 20%;
+    }
+    
+    .navegadores-card {
+        text-align: center;
+        margin:43px 20px;
+        float:left;
+        width: 18%;
+
+    }
+    
+    .ferramentas-card {
+        text-align: center;
+        margin:10px 30px 30px 40px;
+        float:left;
+        width: 20%;
+    }
+
+    .ferramentas-card h1 {
+        font-size: 30px;
+    }
+    
+    .ajuda-card {
+        text-align: center;
+        margin:30px;
+        float:left;
+        width: 20%;
+    }
+
+    .xbox {
+        text-align: center;
+        margin:30px;
+        float:left;
+        width: 20%;
+        position: relative;
+        bottom: 20px;
+    }
+    
+    .windows-phone {
+       text-align: center;
+       float: left;
+       margin: 28px;
+       position: relative;
+       bottom: 20px;
+    }
+
+    .drivers     {
+        text-align: center;
+        margin:30px;
+        float:left;
+        width: 20%;
+        position: relative;
+        left: 30px;
+    }
+
+    .windows-card:hover{
+        background-color: #e6e6e6;
+    }
+    .office-card:hover{
+        background-color: #e6e6e6;
+    }
+    
+    .navegadores-card:hover{
+        background-color: #e6e6e6;
+    }
+    
+    .ferramentas-card:hover{
+        background-color: #e6e6e6;
+    }
+    
+    .ajuda-card:hover{
+        background-color: #e6e6e6;
+    }
+    
+    .xbox:hover{
+        background-color: #e6e6e6;
+    }
+    
+    .windows-phone:hover{
+        background-color: #e6e6e6;
+    }
+    
+    .drivers:hover{
+        background-color: #e6e6e6;
+    }
+    
+    #btn-2:hover{
+        text-decoration: underline;
+    }
+
+    #btn-1:hover{
+        background-color: #626262;
+    }
+    
+    .texto {
+        text-align: center;
+        
+    }
+
+    .rodape{
+        clear: left;
+        width: 100%;
+        height: 100%;
+        background-color: #F2F2F2;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .rodape .content{
+        width: 92%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .rodape .content ul .title{
+        color: #616161;
+        font-weight: 700;
+        font-size: 1.6rem;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+    .rodape .content ul li{
+        padding-bottom: 1rem;
+    }
+    .rodape .content ul li a{
+        color: #616161;
+        font-weight: normal;
+        font-size: 1.3rem;
+        text-align: left;
+        transition: all 0.3s linear;
+    }
+    .rodape .content ul li a:hover{
+        text-decoration: underline;
+    }
+    footer{
+        width: 100%;
+        height: 100%;
+        background-color: #F2F2F2;
+        padding-bottom: 2rem;
+    }
+    footer .ft{
+        width: 92%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .ft .text{
+        display: flex;
+        height: 2rem;
+        align-items: center;
+    }
+    footer .ft .text p{
+        color: #616161;
+        font-weight: normal;
+        font-size: 1.3rem;
+        text-align: left;
+        transition: all 0.3s linear;
+        cursor: pointer;
+    }
+    footer .ft .text p:hover{
+        text-decoration: underline;
+    }
+    footer .ft .text img{
+        margin-right: 1rem;
+    }
+    footer .ft ul{
+        display: flex;
+    }
+    footer .ft ul li a{
+        color: #616161;
+        font-weight: normal;
+        font-size: 1.3rem;
+        text-align: left;
+        transition: all 0.3s linear;
+        margin-left: 3rem;
+    }
+    footer .ft ul li a:hover{
+        text-decoration: underline;
+    }
+    footer .ft ul li:last-child{
+        color: #616161;
+        font-weight: normal;
+        font-size: 1.3rem;
+        text-align: left;
+        transition: all 0.3s linear;
+        margin-left: 3rem;
+    }
+    
+    .btn-primary {
+        text-decoration: none;
+        color:black;
+    }
+    
+    
+    
+
+
+
+
+        
+</style>
+</head>
+<body>
+    <header class="header-top">
+        <img src="./imagens/logo.png" link="" class="logo"> 
+        <nav class="header-nav"> 
+          
+            <ul class="navigation"> 
+                <li id="principal"> <a href=""> Centro de Download</a> </li>
+               <li > <a href=""> Windows</a>
+               <li> <a href=""> Office </a></li>
+               <li> <a href=""> Navegadores da Web  </a> </li>
+               <li> <a href=""> Ferramentas para desenvolvedores </a> </li>
+               <li> <a href=""> Xbox</a></li>
+               <li> <a href=""> Windows Phone</a></li>
+            </ul>
+            <ul class="nav-2">
+                <li id="tudo"> <a href=""> Toda a Microsoft  &#709; </a>
+
+
+                </li>    
+                <li>
+                     <a href="" id="pesq"> Pesquisar </a>
+                    <img id="pesquisar" src="./imagens/pesquisar.logo.png"> 
+
+                </li>
+                <li>     
+                    <a href="" id="carr"> Carrinho </a>
+                    <img id="Carrinho" src="./imagens/carrinho.png"> 
+
+
+                </li>
+                <img id="conta" src="./imagens/conta.png"> 
+
+                <li>
+
+
+                </li>
+            
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+<article class="sobre">  
+    <img src="imagens/imagem-main.png">
+    <div id="sobre">
+    <h1> Microsoft 365</h1>
+    <p> Aplicativos premium do Office, armazenamento extra na nuvem, 
+        segurança avançada e muito mais. Tudo em uma conveniente assinatura</p>
+    <div id="btn-1"> <a href="">Para 1 pessoa </a></div>
+    <div id="btn-2"> <a href=""> Para até 6 pessoas > </a></div>
+</div>
+</article>
+
+<main>
+        <div class="texto"><h1>Principais categorias de download</h1></div> 
+        <div class="windows-card"> <img src="imagens/windows.png" class="windows"> <h1> Windows</h1> <p> Ferramentas de TI, segurança do computador e otimização.</p>   </div>  
+        <div class="office-card"> <img src="imagens/office.png" class="office"> <h1> Office </h1> <p> Visualizadores, ferramentas e atualizações para produtos do Office.</p>   </div>  
+        <div class="navegadores-card"> <img src="imagens/navegaadores.png" class="Navegadores"> <h1> Navegadores</h1> <p> Versões de navegador, atualizações, service packs.</p>   </div>  
+        <div class="ferramentas-card"> <img src="imagens/ferramentas para devs.png" class="ferramentas"> <h1> Ferramentas para desenvolvedores</h1> <p> SDKs, redistribuíveis, ferramentas e muito mais.</p>   </div>  
+        <div class="ajuda-card"> <img src="imagens/ajuda.png" class="ajuda"> <h1> Ajuda do windows 10</h1> <p> Obtenha respostas para as suas dúvidas.</p>   </div>  
+        <div class="xbox"> <img src="imagens/xbox e jogos.png" class="Xbox"> <h1> Xbox e jogos</h1> <p> Atualizações e ferramentas para desenvolvedores.</p>   </div>  
+        <div class="windows-phone"> <img src="imagens/windows phone.png" class="windows-phone"> <h1> Windows Phone</h1> <p> Aplicativos, SDKs e atualizações.</p>   </div>  
+        <div class="drivers"> <img src="imagens/drives de hardware.png" class="Drivers"> <h1> Drivers de hardware</h1> <p> Para impressoras, câmeras, placas de rede e muito mais.</p>   </div>  
+
+        
+</main>
+<div class="rodape">
+    <div class="rodape_central">
+        <div class="content">
+            <ul>
+                <li class="title">Novidades</li>
+                <li><a href="">Microsoft 365</a></li>
+                <li><a href="">Aplicativos do Windows 11</a></li>
+            </ul>
+            <ul>
+                <li class="title">Microsoft Store</li>
+                <li><a href="">Perfil da conta</a></li>
+                <li><a href="">Centro de Download</a></li>
+                <li><a href="">Suporte da Microsoft Store</a></li>
+                <li><a href="">Devoluções</a></li>
+                <li><a href="">Acompanhamento de pedidos</a></li>
+            </ul>
+            <ul>
+                <li class="title">Educação</li>
+                <li><a href="">Microsoft Education</a></li>
+                <li><a href="">Dispositivos para educação</a></li>
+                <li><a href="">Microsoft Teams para Educação</a></li>
+                <li><a href="">Microsoft 365 Education</a></li>
+                <li><a href="">Office Education</a></li>
+                <li><a href="">Treinamento e desenvolvimento de educadores</a></li>
+                <li><a href="">Ofertas para estudantes e pais</a></li>
+                <li><a href="">Azure para estudantes</a></li>
+            </ul>
+            <ul>
+                <li class="title">Negócios</li>
+                <li><a href="">Microsoft Cloud</a></li>
+                <li><a href="">Segurança da Microsoft</a></li>
+                <li><a href="">Azure</a></li>
+                <li><a href="">Dynamics 365</a></li>
+                <li><a href="">Microsoft 365</a></li>
+                <li><a href="">Microsoft Advertising</a></li>
+                <li><a href="">Microsoft Industry</a></li>
+                <li><a href="">Microsoft Teams</a></li>
+            </ul>
+            <ul>
+                <li class="title">Desenvolvedor e TI</li>
+                <li><a href="">Centro do desenvolvedor</a></li>
+                <li><a href="">Documentação</a></li>
+                <li><a href="">Microsoft Learn</a></li>
+                <li><a href="">Comunidade Microsoft Tech</a></li>
+                <li><a href="">Azure Marketplace</a></li>
+                <li><a href="">AppSource</a></li>
+                <li><a href="">Microsoft Power Platform</a></li>
+                <li><a href="">Visual Studio</a></li>
+            </ul>
+            <ul>
+                <li class="title">Empresa</li>
+                <li><a href="">Carreiras</a></li>
+                <li><a href="sobre.html">Sobre a Microsoft</a></li>
+                <li><a href="">Notícias da empresa</a></li>
+                <li><a href="">Privacidade na Microsoft</a></li>
+                <li><a href="">Investidores</a></li>
+                <li><a href="">Diversidade e inclusão</a></li>
+                <li><a href="">Acessibilidade</a></li>
+                <li><a href="">Sustentabilidade</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer>
+<div class="ft">
+    <div class="text">
+        <img src="../img/planet.png" alt="Mundo">
+        <p>Português (Brasil)</p>
+    </div>
+    <ul>
+        <li><a href="">Entre em contato com a Microsoft</a></li>
+        <li><a href="">Privacidade</a></li>
+        <li><a href="">Gerenciar cookies</a></li>
+        <li><a href="">Ética e Compliance</a></li>
+        <li><a href="">Nota Legal</a></li>
+        <li><a href="">Marcas</a></li>
+        <li><a href="">Sobre os nossos anúncios</a></li>
+        <li>&copy; Microsoft 2022</li>
+    </ul>
+    <button type="button"> <a class="btn-primary" href="index.html" role="button">Página inicial</a></button>
+</div>
+</footer>
+
+</body>
+
+</html>

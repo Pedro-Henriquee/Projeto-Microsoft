@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xml:lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Microsoft</title>
+</head>
+<style>
+    html{
+        font-size: 62.5%;
+    }
+    a{
+        text-decoration: none;
+    }
+    body{
+        word-wrap: break-word;
+        margin: 0;
+    }
+    .central{
+        width: 132rem;
+        margin: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    ul{
+        list-style: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+    .menu_top{
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 5.4rem;
+    }
+    .menu_top .menu{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.8rem;
+    }
+    .menu_top .menu ul{
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        align-items: center;
+        margin-left: 1em;
+    }
+    .menu_top .menu ul:first-child{
+        width: 35%;
+    }
+    .menu_top .menu ul:last-child{
+        width: 20%;
+        margin-right: 2rem;
+    }
+    .menu_top .menu ul:first-child li img{
+        width: 10.5rem;
+    }
+    .menu_top .menu ul li a p{
+        color: #262626;
+        font-weight: normal;
+        font-size: 1.4rem;
+        text-align: left;
+        margin-left: 0.5rem;
+        padding-top: 0.2rem;
+        border-bottom: 0.2rem solid transparent;
+    }
+    .menu_top .menu ul li a .bold{
+        color: #262626;
+        font-weight: 800;
+        font-size: 1.4rem;
+        text-align: left;
+        margin-left: 0.5rem;
+        padding-top: 0.2rem;
+        border-bottom: 0.2rem solid transparent;
+    }
+    .menu_top .menu ul li a p:hover{
+        border-bottom: 0.2rem solid #262626;
+    }
+    .blogs{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 7rem;
+    }
+    .blogs .central h1{
+        color: #262626;
+        font-weight: normal;
+        font-size: 4rem;
+        text-align: center;
+        padding: 4rem;
+    }
+    .blogs .list_blog{
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .blogs .list_blog li{
+        width: 31%;
+        height: 100%;
+    }
+    .blogs .list_blog li img{
+        width: 100%;
+    }
+    .blogs .list_blog li h2{
+        font-size: 2.3rem;
+        font-weight: 600;
+        color: #262626;
+    }
+    .blogs .list_blog li p{
+        color: #262626;
+        font-weight: normal;
+        font-size: 1.6rem;
+        text-align: left;
+    }
+    .blogs .list_blog li a{
+        color: #005293;
+        font-weight: normal;
+        font-size: 1.6rem;
+        text-align: left;
+        transition: all 0.3s linear;
+    }
+    .blogs .list_blog li a:hover{
+        text-decoration: underline;
+    }
+    .main_background{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: relative;
+        margin-bottom: 7rem;
+    }
+    .main_background img {
+        position: relative;
+        z-index: 1;
+    }
+    .main_background .content_menu .content {
+        width: 25%;
+        margin-left: auto;
+        margin-right: 10rem;
+        position: absolute;
+        top: 35%;
+        left: 15%;
+        z-index: 2;
+    }
+    .main_background .content_menu .content h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #ffffff;
+        text-align: left;
+    }
+    .main_background .content_menu .content .text {
+        font-size: 1.7rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+        color: #ffffff;
+        text-align: start;
+    }
+    .main_background .content_menu .content .buttons{
+        display: flex;
+        align-items: center;
+    }
+    .main_background .content_menu .content .buttons p{
+        padding: 1rem;
+        color: #000000;
+        background-color: #FFFFFF;
+        font-weight: normal;
+        font-size: 1.4rem;
+        text-align: left;
+        margin-right: 3.5rem;
+    }
+    .social_media{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+    }
+    .social_media .media{
+        width: 92%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .social_media .media ul{
+        display: flex;
+        align-items: center;
+    }
+    .social_media .media ul li{
+        margin-right: 1.5rem;
+    }
+    .social_media .media ul li p{
+        color: #262626;
+        font-weight: normal;
+        font-size: 1.6rem;
+        text-align: left;
+    }
+    .social_media .media ul li img{
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+    }
+    .start{
+        display: flex;
+        justify-content: end;
+        margin-right: 4rem;
+        width: 12rem;
+        margin-left: auto;
+        background-color: #a9a9a9;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 7rem;
+    }
+    .start img{
+        width: 2rem;
+        height: 2rem;
+        margin-top: 1.3rem;
+    }
+    .start p{
+        color: #262626;
+        font-weight: normal;
+        font-size: 1.6rem;
+        text-align: left;
+    }
+    .rodape{
+        width: 100%;
+        height: 100%;
+        background-color: #F2F2F2;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .rodape .content{
+        width: 92%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .rodape .content ul .title{
+        color: #616161;
+        font-weight: 700;
+        font-size: 1.6rem;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+    .rodape .content ul li{
+        padding-bottom: 1rem;
+    }
+    .rodape .content ul li a{
+        color: #616161;
+        font-weight: normal;
+        font-size: 1.3rem;
+        text-align: left;
+        transition: all 0.3s linear;
+    }
+    .rodape .content ul li a:hover{
+        text-decoration: underline;
+    }
+    footer{
+        width: 100%;
+        height: 100%;
+        background-color: #F2F2F2;
+        padding-bottom: 2rem;
+    }
+    footer .ft{
+        width: 92%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .ft .text{
+        display: flex;
+        height: 2rem;
+        align-items: center;
+    }
+    footer .ft .text p{
+        color: #616161;
+        font-weight: normal;
+        font-size: 1.3rem;
+        text-align: left;
+        transition: all 0.3s linear;
+        cursor: pointer;
+    }
+    footer .ft .text p:hover{
+        text-decoration: underline;
+    }
+    footer .ft .text img{
+        margin-right: 1rem;
+    }
+    footer .ft ul{
+        display: flex;
+    }
+    footer .ft ul li a{
+        color: #616161;
+        font-weight: normal;
+        font-size: 1.3rem;
+        text-align: left;
+        transition: all 0.3s linear;
+        margin-left: 3rem;
+    }
+    footer .ft ul li a:hover{
+        text-decoration: underline;
+    }
+    footer .ft ul li:last-child{
+        color: #616161;
+        font-weight: normal;
+        font-size: 1.3rem;
+        text-align: left;
+        transition: all 0.3s linear;
+        margin-left: 3rem;
+    }
+    .btn-primary {
+        text-decoration: none;
+        color:black;
+    }
+    
+
+</style>
+<main id="cover">
+    <div class="menu_top">
+        <div class="central">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="../img/logo.png" alt="Logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="bold">| Sobre</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>Empresa</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>Pessoas</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>ideais</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>Careers</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">
+                            <p>Toda Microsoft</p>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="../img/search.png" alt="Pesquisa">
+                    </li>
+                    <li>
+                        <img src="../img/perfil.png" alt="Perfil">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main_background">
+        <img class="background" src="../img/back.jpg" alt="Background">
+        <div class="content_menu">
+            <div class="central">
+                <div class="content">
+                    <h1>O que valorizamos</h1>
+                    <p class="text">Mossa missão é capacitar todas as pessoas e organizações do planeta a conquistar mais.</p>
+                    <div class="buttons">
+                        <p>Saber mais ></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blogs">
+        <div class="central">
+            <h1>Programas e projetos em destaque</h1>
+            <ul class="list_blog">
+                <li>
+                    <img src="../img/ino.jpg" alt="Inovação">
+                    <h2>Inovação</h2>
+                    <p>Acreditamos que a tecnologia pode e deve ser uma força para o bem e que a inovação significativa pode e vai contribuir para um mundo mais brilhante, de maneiras grandes e pequenas.</p>
+                    <a href="">Confira as pesquisas mais recentes ></a><br>
+                    <a href="">Explore as histórias de inovação ></a>
+                </li>
+                <li>
+                    <img src="../img/div.jpg" alt="Diversidade e inclusão">
+                    <h2>Diversidade e inclusão</h2>
+                    <p>Prosperamos com vozes diversificadas. Valorizamos as experiências, pontos fortes e diferentes pontos de vista de nossos funcionários e clientes para formar, desafiar e ampliar nosso pensamento. É assim que inovamos.</p>
+                    <a href="">Saiba mais sobre nosso compromisso ></a>
+                </li>
+                <li>
+                    <img src="../img/resp.jpg" alt="Responsabilidade social corporativa">
+                    <h2>Responsabilidade social corporativa</h2>
+                    <p>Acreditamos que a tecnologia deve ser usada para o bem e trabalhamos para promover um futuro sustentável no qual todos tenham acesso às oportunidades e aos benefícios gerados pela tecnologia.</p>
+                    <a href="">Saiba mais sobre nossa abordagem ></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="blogs">
+        <div class="central">
+            <ul class="list_blog"> 
+                <li>
+                    <img src="../img/ia.jpg" alt="IA">
+                    <h2>IA</h2>
+                    <p>Acreditamos que a IA, quando desenvolvida com foco nas pessoas, pode estender suas capacidades, libertá-lo para realizações mais criativas e estratégicas e ajudar você ou sua organização a alcançar mais.</p>
+                    <a href="">Saiba mais sobre a IA ></a>
+                </li>
+                <li>
+                    <img src="../img/com.jpg" alt="Computação confiável">
+                    <h2>Computação confiável</h2>
+                    <p>Saiba como proporcionamos experiências de computação seguras, privativas e confiáveis com base em práticas de negócios sólidas.</p>
+                    <a href="">Saiba mais sobre a Central de Confiabilidade ></a>
+                </li>
+                <li>
+                    <img src="../img/covid.jpg" alt="Respondendo à COVID-19 juntos">
+                    <h2>Respondendo à COVID-19 juntos</h2>
+                    <p>Conforme o mundo responde ao surto de COVID-19, estamos fazendo nossa parte para garantir a segurança de nossos funcionários, nos esforçando para proteger a saúde e o bem-estar das comunidades em que operamos e fornecendo tecnologia, dicas e recursos para nossos clientes.</p>
+                    <a href="">Leia mais sobre nossa resposta ></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="social_media">
+        <div class="media">
+            <ul>
+                <li><p>Follow Microsoft</p></li>
+                <li><img src="../img/face.svg" alt="Facebook"></li>
+                <li><img src="../img/twit.svg" alt="Twitter"></li>
+                <li><img src="../img/link.svg" alt="Linkedin"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="rodape">
+        <div class="rodape_central">
+            <div class="content">
+                <ul>
+                    <li class="title">Novidades</li>
+                    <li><a href="">Microsoft 365</a></li>
+                    <li><a href="">Aplicativos do Windows 11</a></li>
+                </ul>
+                <ul>
+                    <li class="title">Microsoft Store</li>
+                    <li><a href="">Perfil da conta</a></li>
+                    <li><a href="">Centro de Download</a></li>
+                    <li><a href="">Suporte da Microsoft Store</a></li>
+                    <li><a href="">Devoluções</a></li>
+                    <li><a href="">Acompanhamento de pedidos</a></li>
+                </ul>
+                <ul>
+                    <li class="title">Educação</li>
+                    <li><a href="">Microsoft Education</a></li>
+                    <li><a href="">Dispositivos para educação</a></li>
+                    <li><a href="">Microsoft Teams para Educação</a></li>
+                    <li><a href="">Microsoft 365 Education</a></li>
+                    <li><a href="">Office Education</a></li>
+                    <li><a href="">Treinamento e desenvolvimento de educadores</a></li>
+                    <li><a href="">Ofertas para estudantes e pais</a></li>
+                    <li><a href="">Azure para estudantes</a></li>
+                </ul>
+                <ul>
+                    <li class="title">Negócios</li>
+                    <li><a href="">Microsoft Cloud</a></li>
+                    <li><a href="">Segurança da Microsoft</a></li>
+                    <li><a href="">Azure</a></li>
+                    <li><a href="">Dynamics 365</a></li>
+                    <li><a href="">Microsoft 365</a></li>
+                    <li><a href="">Microsoft Advertising</a></li>
+                    <li><a href="">Microsoft Industry</a></li>
+                    <li><a href="">Microsoft Teams</a></li>
+                </ul>
+                <ul>
+                    <li class="title">Desenvolvedor e TI</li>
+                    <li><a href="">Centro do desenvolvedor</a></li>
+                    <li><a href="">Documentação</a></li>
+                    <li><a href="">Microsoft Learn</a></li>
+                    <li><a href="">Comunidade Microsoft Tech</a></li>
+                    <li><a href="">Azure Marketplace</a></li>
+                    <li><a href="">AppSource</a></li>
+                    <li><a href="">Microsoft Power Platform</a></li>
+                    <li><a href="">Visual Studio</a></li>
+                </ul>
+                <ul>
+                    <li class="title">Empresa</li>
+                    <li><a href="">Carreiras</a></li>
+                    <li><a href="sobre.html">Sobre a Microsoft</a></li>
+                    <li><a href="">Notícias da empresa</a></li>
+                    <li><a href="">Privacidade na Microsoft</a></li>
+                    <li><a href="">Investidores</a></li>
+                    <li><a href="">Diversidade e inclusão</a></li>
+                    <li><a href="">Acessibilidade</a></li>
+                    <li><a href="">Sustentabilidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="ft">
+        <div class="text">
+            <img src="../img/planet.png" alt="Mundo">
+            <p>Português (Brasil)</p>
+        </div>
+        <ul>
+            <li><a href="">Fale Conosco</a></li>
+            <li><a href="">Privacidade</a></li>
+            <li><a href="">Gerenciar cookies</a></li>
+            <li><a href="">Nota Legal</a></li>
+            <li><a href="">Marcas</a></li>
+            <li><a href="">Sobre os nossos anúncios</a></li>
+            <li>&copy; Microsoft 2022</li>
+        </ul>
+        <button type="button"> <a class="btn-primary" href="index.html" role="button">Página inicial</a></button>
+    </div>
+</footer>

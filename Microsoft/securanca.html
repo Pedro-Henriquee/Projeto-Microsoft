@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Serviços de Segurança na Nuvem </title>
+
+<style>
+    html{
+        font-size: 79.5%;
+    }
+    a{
+        text-decoration: none;
+    }
+    body{
+        word-wrap: break-word;
+        margin: 0;
+    }
+    ul{
+        list-style: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+    body {
+        width: 100%; 
+        margin: auto;
+        font-family: sans-serif;
+        padding: 0;
+        margin:0;
+    }
+
+    .logo {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top:10px;
+        left: 200px;
+    }
+
+    .header-top {
+        position: relative;
+    }
+
+    .header-nav {
+        
+        height: 15px; 
+        position: absolute;
+        bottom:10px;
+        left:380px;
+        width: 90%;
+        
+       
+        
+    }
+
+    .header-nav li {
+        list-style: none;
+        font-size: 15px;
+        margin: 0 2px 0 0;
+        display: inline-block;
+      
+        
+    }
+    .navigation li {
+        padding: 0 5px;
+        font-size: 12px;
+        
+    }
+
+    .navigation a {
+        color:black;
+        text-decoration: none;
+    }
+
+    .navigation a:hover{
+        text-decoration: underline;
+    }
+
+    .nav-2 li { 
+        position: relative;
+        left: 850px;
+        bottom: 50px;
+        
+    }
+
+    .nav-2 a {
+        position: relative;
+        right: 10px;
+        text-decoration: none;
+        color: black;
+         
+    }
+
+    #carr {
+        position: relative;
+        left: 65px;
+        bottom:10px;
+        text-decoration: none;
+        color: black;
+        padding: 0 10px;
+    }
+
+    #carr:hover {
+        text-decoration: underline;
+    }
+    #tudo {
+        position: relative;
+        bottom: 60px;
+        left: 950px;
+        padding: 0 10px;  
+    }
+    #pesq {
+        padding: 0 30px 0 0;
+        position: relative;
+        left: 100px;
+        bottom:10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    #pesq:hover {
+        text-decoration: underline;
+    }
+    #pesquisar{
+        position: relative;
+        left: 80px;
+        bottom:1px;
+        padding: 0 10px 0 0;
+    }
+
+    #Carrinho{
+        position: relative;
+        left: 60px;
+        bottom:2px;
+    }
+
+    #conta {
+        position: relative;
+        left: 920px;
+        bottom: 45px;
+    }
+    #principal {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .sobre{
+        height: 800px;
+        background-color: #e6e6e6;
+        margin: 30px 0 0 0; 
+        width: 100%;
+    }
+
+    #sobre {
+        position: relative;
+        bottom: 300px;
+        left: 90px;
+        width: 30%;
+    }
+
+    .sobre h1 {
+        font-size: 40px;
+        position: relative;
+        left: 700px;
+        bottom: 200px;
+    }
+
+    .sobre p {
+        text-align: center;
+        position: relative;
+        left: 620px;
+        bottom: 200px;
+    }
+
+    #btn-1 {
+        background-color: black;
+        color:white;
+        width: 30%;
+        height: 50px;
+        text-align: center;
+        box-sizing: border-box;
+        padding:15px 2px 25px;
+        position: relative;
+        left: 600px;
+        bottom: 180px;
+        
+    }
+
+    #btn-1 a {
+        text-decoration: none;
+        color:#FFFFFF;
+        font-size: 13px;
+    }
+
+    #btn-2 a {
+        text-decoration: none;
+        color:#FFFFFF;
+        font-size: 13px;
+    }
+
+    #btn-3 a {
+        text-decoration: none;
+        color:#FFFFFF;
+        font-size: 13px;
+    }
+
+
+    #btn-2 {
+        background-color: black;
+        color:white;
+        width: 30%;
+        height: 50px;
+        text-align: center;
+        box-sizing: border-box;
+        padding:15px 2px 25px;
+        position: relative;
+        left: 800px;
+        bottom: 230px;
+    }
+
+    #btn-3 {
+        background-color: black;
+        color:white;
+        width: 30%;
+        height: 50px;
+        text-align: center;
+        box-sizing: border-box;
+        padding:15px 2px 25px;
+        position: relative;
+        left: 1000px;
+        bottom: 280px;
+    }
+
+    .sobre img {
+        position: relative;
+        left:px;
+        height: 100%;
+       background-position: cover;
+    }
+
+    #tudo:hover{
+        text-decoration:underline;
+    }
+
+    main {
+        width: 85%;
+        margin: 80px 0px 0px 150px;
+        background-color: white;
+    }
+
+
+    #avaliacao-gratuita {
+        position: relative;
+        border: red none 2px;
+        left: 700px;
+        bottom: 18px;
+        font-size: 13px;
+     
+
+    }
+    .texto {
+        text-align: center;
+        
+    }
+
+    .rodape{
+        clear: left;
+        width: 100%;
+        height: 100%;
+        background-color: #F2F2F2;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .rodape .content{
+        width: 92%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .rodape .content ul .title{
+        color: #616161;
+        font-weight: 700;
+        font-size: 1.6rem;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+    .rodape .content ul li{
+        padding-bottom: 1rem;
+    }
+    .rodape .content ul li a{
+        color: #616161;
+        font-weight: normal;
+        font-size: 1.3rem;
+        text-align: left;
+        transition: all 0.3s linear;
+    }
+    .rodape .content ul li a:hover{
+        text-decoration: underline;
+    }
+    footer{
+        width: 100%;
+        height: 100%;
+        background-color: #F2F2F2;
+        padding-bottom: 2rem;
+    }
+    footer .ft{
+        width: 92%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .ft .text{
+        display: flex;
+        height: 2rem;
+        align-items: center;
+    }
+    footer .ft .text p{
+        color: #616161;
+        font-weight: normal;
+        font-size: 1.3rem;
+        text-align: left;
+        transition: all 0.3s linear;
+        cursor: pointer;
+    }
+    footer .ft .text p:hover{
+        text-decoration: underline;
+    }
+    footer .ft .text img{
+        margin-right: 1rem;
+    }
+    footer .ft ul{
+        display: flex;
+    }
+    footer .ft ul li a{
+        color: #616161;
+        font-weight: normal;
+        font-size: 1.3rem;
+        text-align: left;
+        transition: all 0.3s linear;
+        margin-left: 3rem;
+    }
+    footer .ft ul li a:hover{
+        text-decoration: underline;
+    }
+    footer .ft ul li:last-child{
+        color: #616161;
+        font-weight: normal;
+        font-size: 1.3rem;
+        text-align: left;
+        transition: all 0.3s linear;
+        margin-left: 3rem;
+    }
+
+
+    #azul {
+        height: 300px;
+        background-color: #0078d4;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 60px 600px;
+        box-sizing: border-box;
+        color:white;
+   
+    }
+
+    #azul h1 {
+        font-size: 22px;
+        position: relative;
+        left:30px;
+    }
+    
+    #azul p {
+        font-size: 15px;
+        position: relative;
+        left:30px;
+    }
+
+    #azul a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        top: 30px;
+        left: 30px;
+        font-weight: bold;
+    }
+    
+    .btn-primary {
+        text-decoration: none;
+        color:black;
+    }
+    
+
+
+
+
+        
+</style>
+</head>
+<body>
+    <header class="header-top">
+        <img src="./imagens/logo.png" link="" class="logo"> 
+        <nav class="header-nav"> 
+          
+            <ul class="navigation"> 
+                <li id="principal"> <a href=""> Segurança da Microsoft</a> </li>
+               <li > <a href=""> Soluções 	
+                &#709;</a>
+               <li> <a href=""> Produtos  	
+                &#709; </a></li>
+               <li> <a href=""> Serviços 	
+                &#709; </a> </li>
+               <li> <a href=""> Parceiros  </a> </li>
+               <li> <a href=""> Recursos 	
+                &#709;</a></li>
+               <li> <a href=""> Mais  	
+                &#709;</a></li>
+                <div id="avaliacao-gratuita"> <a href=""> Inicie uma avaliação gratuita</a></div>
+            </ul>
+            <ul class="nav-2">
+                <li id="tudo"> <a href=""> Toda a Microsoft   &#709 </a>
+
+
+                </li>    
+                <li>
+                     <a href="" id="pesq"> Pesquisar </a>
+                    <img id="pesquisar" src="./imagens/pesquisar.logo.png"> 
+
+                </li>
+                <li>     
+                    <a href="" id="carr"> Carrinho </a>
+                    <img id="Carrinho" src="./imagens/carrinho.png"> 
+
+
+                </li>
+                <img id="conta" src="./imagens/conta.png"> 
+
+                <li>
+
+
+                </li>
+            
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+<article class="sobre">  
+    <img src="imagens/fundo.png">
+    <div id="sobre">
+    <h1> Segurança para todos</h1>
+    <p> A Segurança da Microsoft ajuda a proteger pessoas e dados contra ameaças cibernéticas para dar paz de espírito a você.</p>
+    <div id="btn-1"> <a href="">Para grande empresas </a></div>
+    <div id="btn-2"> <a href=""> Para empresas  </a></div>
+    <div id="btn-3"> <a href="">Para uso doméstico </a></div>
+</div>
+</article>
+<div id="azul">
+    <h1>Este é o mês da Conscientização sobre Segurança Cibernética</h1>
+    <p> Saiba como ter inteligência cibernética com dicas para proteger suas identidades e dados online de ameaças.</p>
+    <a href="">Saiba mais</a> 
+</div>
+
+<div class="rodape">
+    <div class="rodape_central">
+        <div class="content">
+            <ul>
+                <li class="title">Novidades</li>
+                <li><a href="">Microsoft 365</a></li>
+                <li><a href="">Aplicativos do Windows 11</a></li>
+            </ul>
+            <ul>
+                <li class="title">Microsoft Store</li>
+                <li><a href="">Perfil da conta</a></li>
+                <li><a href="">Centro de Download</a></li>
+                <li><a href="">Suporte da Microsoft Store</a></li>
+                <li><a href="">Devoluções</a></li>
+                <li><a href="">Acompanhamento de pedidos</a></li>
+            </ul>
+            <ul>
+                <li class="title">Educação</li>
+                <li><a href="">Microsoft Education</a></li>
+                <li><a href="">Dispositivos para educação</a></li>
+                <li><a href="">Microsoft Teams para Educação</a></li>
+                <li><a href="">Microsoft 365 Education</a></li>
+                <li><a href="">Office Education</a></li>
+                <li><a href="">Treinamento e desenvolvimento de educadores</a></li>
+                <li><a href="">Ofertas para estudantes e pais</a></li>
+                <li><a href="">Azure para estudantes</a></li>
+            </ul>
+            <ul>
+                <li class="title">Negócios</li>
+                <li><a href="">Microsoft Cloud</a></li>
+                <li><a href="">Segurança da Microsoft</a></li>
+                <li><a href="">Azure</a></li>
+                <li><a href="">Dynamics 365</a></li>
+                <li><a href="">Microsoft 365</a></li>
+                <li><a href="">Microsoft Advertising</a></li>
+                <li><a href="">Microsoft Industry</a></li>
+                <li><a href="">Microsoft Teams</a></li>
+            </ul>
+            <ul>
+                <li class="title">Desenvolvedor e TI</li>
+                <li><a href="">Centro do desenvolvedor</a></li>
+                <li><a href="">Documentação</a></li>
+                <li><a href="">Microsoft Learn</a></li>
+                <li><a href="">Comunidade Microsoft Tech</a></li>
+                <li><a href="">Azure Marketplace</a></li>
+                <li><a href="">AppSource</a></li>
+                <li><a href="">Microsoft Power Platform</a></li>
+                <li><a href="">Visual Studio</a></li>
+            </ul>
+            <ul>
+                <li class="title">Empresa</li>
+                <li><a href="">Carreiras</a></li>
+                <li><a href="sobre.html">Sobre a Microsoft</a></li>
+                <li><a href="">Notícias da empresa</a></li>
+                <li><a href="">Privacidade na Microsoft</a></li>
+                <li><a href="">Investidores</a></li>
+                <li><a href="">Diversidade e inclusão</a></li>
+                <li><a href="">Acessibilidade</a></li>
+                <li><a href="">Sustentabilidade</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer>
+<div class="ft">
+    <div class="text">
+        <img src="../img/planet.png" alt="Mundo">
+        <p>Português (Brasil)</p>
+    </div>
+    <ul>
+        <li><a href="">Entre em contato com a Microsoft</a></li>
+        <li><a href="">Privacidade</a></li>
+        <li><a href="">Gerenciar cookies</a></li>
+        <li><a href="">Ética e Compliance</a></li>
+        <li><a href="">Nota Legal</a></li>
+        <li><a href="">Marcas</a></li>
+        <li><a href="">Sobre os nossos anúncios</a></li>
+        <li>&copy; Microsoft 2022</li>
+    </ul>
+    <button type="button"> <a class="btn-primary" href="index.html" role="button">Página inicial</a></button>
+</div>
+
+
+</footer>
+
+</body>
+
+</html>
